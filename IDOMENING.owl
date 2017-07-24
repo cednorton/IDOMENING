@@ -18,12 +18,12 @@ IDOMENING will allow data integration, domain knowledge sharing and efficient co
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-20T20:46:00</dc:date>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sadouanouan MALO</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moussa LO</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cédric W.R. BERE</dc:creator>
         <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cédric W.R. BERE</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gaoussou CAMARA</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stanislas OUARO</dc:creator>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious Disease Ontology for MENINGitis (IDOMENING)</dc:title>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</protege:defaultLanguage>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious Disease Ontology for MENINGitis (IDOMENING)</dc:title>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stanislas OUARO</dc:creator>
         <dc:format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OWL-DL</dc:format>
     </owl:Ontology>
     
@@ -171,6 +171,12 @@ IDOMENING will allow data integration, domain knowledge sharing and efficient co
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Pathogen">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Bacteria"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Symptoms"/>
 </rdf:RDF>
 
 

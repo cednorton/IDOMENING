@@ -2,6 +2,6 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ido/2016-07-05/ido.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/Construction%20IDOMENING/IDOMENING/ido-merged.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1498000984872" name="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING" uri="IDOMENING.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1500856673457" name="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING" uri="IDOMENING.owl"/>
     </group>
 </catalog>
