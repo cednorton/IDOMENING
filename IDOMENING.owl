@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#"
      xml:base="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -12,6 +13,9 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ido/2016-07-05/ido.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/ikesdjan.owl"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We propose IDOMENING an extension of Infectious Disease Ontology (IDO) for meningitis disease. 
 Our ontology IDOMENING will used in extracting data and events from text messages published in social medias. 
 IDOMENING will allow data integration, domain knowledge sharing and efficient communication between actors within the epidemiological surveillance system.</rdfs:comment>
@@ -40,33 +44,17 @@ IDOMENING will allow data integration, domain knowledge sharing and efficient co
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Bacteria -->
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Bacteria">
-        <rdfs:comment>Bacteria is an organism</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Diplococcus -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Diplococcus">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Pathogen"/>
-    </owl:Class>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </rdf:Description>
     
 
 
     <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Disease -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Disease"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Gram_negative -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Gram_negative">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Diplococcus"/>
-    </owl:Class>
     
 
 
@@ -94,89 +82,23 @@ IDOMENING will allow data integration, domain knowledge sharing and efficient co
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Gram_negative"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_Lactamica -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_Lactamica">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_A -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_A">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_B -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_B">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_C -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_C">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_W135 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_W135">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_X -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_X">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_Y -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Nm_Y">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Neisseria_meningitidis"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Pathogen -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Pathogen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Bacteria"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Symptoms -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/5/ontologies/IDOMENING#Symptoms"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_65699">
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nm A</obo:IAO_0000118>
+    </rdf:Description>
 </rdf:RDF>
 
 
